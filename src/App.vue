@@ -19,15 +19,21 @@
 </template>
 
 <script setup lang="ts">
-// 한가위 페이지라 로직은 단순하게!
-// 추후 달 움직임, 시간에 따라 색 변화를 넣을 수도 있음
+// 특별한 로직은 없음, 순수히 디자인용 페이지
 </script>
 
 <style scoped>
+/* 전체화면 기본 설정 */
+html, body, #app, .chuseok-page {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 /* 전체 페이지 스타일 */
 .chuseok-page {
   position: relative;
-  height: 100vh;
   overflow: hidden;
   background: linear-gradient(to top, #2c3e50, #f0c27b);
   display: flex;
@@ -39,14 +45,14 @@
 /* 🌕 달 */
 .moon {
   position: absolute;
-  top: 10%;
+  top: 12%;
   left: 50%;
   transform: translateX(-50%);
-  width: 180px;
-  height: 180px;
+  width: 22vmin;
+  height: 22vmin;
   background: radial-gradient(circle at 30% 30%, #fff8dc, #f6e58d, #f0c27b);
   border-radius: 50%;
-  box-shadow: 0 0 60px rgba(255, 255, 150, 0.8);
+  box-shadow: 0 0 80px rgba(255, 255, 200, 0.8);
   animation: float 6s ease-in-out infinite;
 }
 
@@ -57,22 +63,22 @@
   border-radius: 50%;
   opacity: 0.8;
   filter: blur(4px);
-  animation: moveClouds 30s linear infinite;
+  animation: moveClouds 40s linear infinite;
 }
 
 .cloud1 {
-  width: 200px;
-  height: 60px;
-  top: 25%;
-  left: -200px;
+  width: 25vmin;
+  height: 8vmin;
+  top: 30%;
+  left: -30vmin;
   animation-delay: 0s;
 }
 
 .cloud2 {
-  width: 160px;
-  height: 50px;
-  top: 40%;
-  left: -300px;
+  width: 20vmin;
+  height: 6vmin;
+  top: 45%;
+  left: -40vmin;
   animation-delay: 10s;
 }
 
@@ -82,7 +88,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(120vw);
+    transform: translateX(140vw);
   }
 }
 
@@ -103,16 +109,17 @@
   color: #fff;
   text-align: center;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-  margin-top: 120px;
+  margin-top: 30vmin;
+  padding: 0 2rem;
 }
 
 .greeting h1 {
-  font-size: 2.5rem;
+  font-size: 4vmin;
   font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
 }
 
 .greeting p {
-  font-size: 1.2rem;
+  font-size: 2vmin;
   margin-top: 1rem;
   opacity: 0.9;
 }
@@ -122,8 +129,9 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 120px;
+  height: 15vmin;
   background: linear-gradient(to top, #3e2723, #8d6e63);
 }
 </style>
+
 
