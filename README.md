@@ -1,7 +1,7 @@
 # 🌕 한가위 웹페이지 (Chuseok Page)
 
-배포 링크: [https://yun-hanseo.github.io/vue-static-page/](https://yun-hanseo.github.io/vue-static-page/)
-GitHub 저장소:[https://github.com/yun-hanseo/vue-static-page](https://github.com/yun-hanseo/vue-static-page)
+배포 링크: [https://yun-hanseo.github.io/vue-static-page/]
+GitHub 저장소:[https://github.com/yun-hanseo/vue-static-page]
 
 ---
 
